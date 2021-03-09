@@ -1,13 +1,13 @@
 <script>
-	// Please fix the following bug.
 
-	export let name = 'Harold';
+  import { onMount } from 'svelte';
 
-  function init() {
+  export let name = 'Harold';
+
+  // fixed by calling the onMount lifecycle function
+  onMount(() => {
     document.getElementById('my-name').style = 'font-size: 2rem;';
-  }
-
-  init();
+  });
 
 </script>
 
