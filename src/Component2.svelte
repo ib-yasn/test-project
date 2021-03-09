@@ -1,5 +1,6 @@
 <script>
   // Please modify the code so when we click the button, we can see the actual input value that's entered.
+  // fix: value of the textfield was not bind to the variable 
 
   const obj = {
     value: 'world'
@@ -12,6 +13,6 @@
 </script>
 
 <h1>What's up?</h1>
-<input value={obj.value} />
+<input bind:value={obj.value} />
 
 <button type="submit" on:click={onClick}>Submit</button>
